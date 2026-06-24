@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-geist-sans: "Geist", system-ui, sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0c0c0c;
+  color: #f5f5f5;
+  font-family: var(--font-geist-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #d97706;
+  color: #0c0c0c;
+}
+
+.section-pad {
+  @apply py-20 md:py-28 lg:py-32;
+}
+
+.container-wide {
+  @apply max-w-7xl mx-auto px-6 md:px-10 lg:px-16;
+}
+
+.label {
+  @apply text-[11px] uppercase tracking-[0.2em] text-dp-amber font-mono;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-dp-amber text-dp-bg px-6 py-3 text-sm font-semibold tracking-wide hover:bg-dp-amber-light transition-colors duration-200 active:scale-[0.98];
+}
+
+.btn-ghost {
+  @apply inline-flex items-center gap-2 border border-dp-dim text-dp-text px-6 py-3 text-sm font-semibold tracking-wide hover:border-dp-muted transition-colors duration-200 active:scale-[0.98];
+}
