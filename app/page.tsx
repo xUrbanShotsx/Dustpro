@@ -153,7 +153,7 @@ export default function Home() {
               <div className="w-px h-10 bg-dp-border" />
               <div>
                 <p className="text-sm font-medium text-dp-text">
-                  NSW Coalfields
+                  Australia Wide
                 </p>
                 <p className="text-xs text-dp-dim uppercase tracking-wider mt-1">
                   Origin
