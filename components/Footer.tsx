@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Envelope } from "@phosphor-icons/react/dist/ssr";
 
 const products = [
@@ -23,15 +24,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 bg-dp-amber flex items-center justify-center">
-                <svg width="15" height="15" viewBox="0 0 18 18" fill="none">
-                  <path d="M2 16L9 2L16 16H2Z" fill="#0c0c0c" />
-                </svg>
-              </div>
-              <span className="text-dp-text font-semibold tracking-tight text-[14px]">
-                DUST<span className="text-dp-amber">PRO</span>
-              </span>
+            <Link href="/" className="inline-flex mb-4">
+              <Image
+                src="/logo.png"
+                alt="DustPro"
+                width={150}
+                height={38}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="text-dp-muted text-sm leading-relaxed max-w-[240px]">
               Australian-made dust management systems. Environmentally

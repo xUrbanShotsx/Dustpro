@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { List, X } from "@phosphor-icons/react";
 
@@ -39,15 +40,15 @@ export default function Nav() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-dp-amber flex items-center justify-center">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M2 16L9 2L16 16H2Z" fill="#0c0c0c" strokeWidth="0" />
-              </svg>
-            </div>
-            <span className="text-dp-text font-semibold tracking-tight text-[15px]">
-              DUST<span className="text-dp-amber">PRO</span>
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/logo.png"
+              alt="DustPro"
+              width={175}
+              height={44}
+              priority
+              className="h-11 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
