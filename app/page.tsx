@@ -166,11 +166,11 @@ export default function Home() {
         {/* Right: Image */}
         <div className="relative min-h-[50vh] lg:min-h-0 order-1 lg:order-2 overflow-hidden">
           <Image
-            src="https://picsum.photos/seed/australian-mining-dust-road/900/1100"
-            alt="Mining haul road with dust suppression in operation"
+            src="/heroshot.png"
+            alt="Open cut mining site — DustPro dust management"
             fill
             priority
-            className="object-cover grayscale"
+            className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dp-bg via-transparent to-transparent lg:via-dp-bg/10 lg:to-transparent" />
