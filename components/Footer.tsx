@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Envelope } from "@phosphor-icons/react/dist/ssr";
+import { MapPin, Envelope, Phone } from "@phosphor-icons/react/dist/ssr";
 
 const products = [
   { label: "DustLoc", href: "/products#dustloc" },
@@ -96,10 +96,19 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-sm text-dp-muted">
                 <Envelope size={16} className="text-dp-amber shrink-0" />
                 <a
-                  href="mailto:info@dustpro.com.au"
+                  href="mailto:jo@dustpro.com.au"
                   className="hover:text-dp-text transition-colors"
                 >
-                  info@dustpro.com.au
+                  jo@dustpro.com.au
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-sm text-dp-muted">
+                <Phone size={16} className="text-dp-amber shrink-0" />
+                <a
+                  href="tel:0425311773"
+                  className="hover:text-dp-text transition-colors"
+                >
+                  0425 311 773
                 </a>
               </li>
             </ul>
