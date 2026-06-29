@@ -66,7 +66,7 @@ export default function ProductsPage() {
             <AnimateIn direction="left">
               <div className="relative overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/dustloc-road-surface-detail/800/650"
+                  src="/dustloc.jpg"
                   alt="DustLoc applied to haul road surface"
                   width={800}
                   height={650}
@@ -245,7 +245,7 @@ export default function ProductsPage() {
             <AnimateIn delay={0.1}>
               <div className="relative overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/wetdown-unsealed-surface/800/650"
+                  src="/wetdown.jpg"
                   alt="WetDown stabilising an unsealed surface"
                   width={800}
                   height={650}
@@ -266,7 +266,7 @@ export default function ProductsPage() {
             <AnimateIn direction="left">
               <div className="relative overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/roadpro-road-treatment-mine/800/650"
+                  src="/roadpro.jpg"
                   alt="RoadPro treatment on mine access road"
                   width={800}
                   height={650}
@@ -392,7 +392,7 @@ export default function ProductsPage() {
             <AnimateIn delay={0.1}>
               <div className="relative overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/trackshield-haul-mining-track/800/650"
+                  src="/trackshield.jpg"
                   alt="TrackShield protecting a mining haul road"
                   width={800}
                   height={650}
@@ -413,7 +413,7 @@ export default function ProductsPage() {
           <AnimateIn>
             <div className="relative mb-14 overflow-hidden">
               <Image
-                src="https://picsum.photos/seed/site-regeneration-revegetation/1400/500"
+                src="/site-regeneration.jpg"
                 alt="Mine site rehabilitation and revegetation"
                 width={1400}
                 height={500}

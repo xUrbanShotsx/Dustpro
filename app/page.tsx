@@ -25,7 +25,7 @@ const products = [
     icon: Drop,
     span: "lg:col-span-2",
     tall: true,
-    img: "https://picsum.photos/seed/dustloc-haul-road/900/600",
+    img: "/dustloc.jpg",
   },
   {
     id: "wetdown",
@@ -35,7 +35,7 @@ const products = [
     icon: Drop,
     span: "lg:col-span-1",
     tall: false,
-    img: "https://picsum.photos/seed/wetdown-surface/600/600",
+    img: "/wetdown.jpg",
   },
   {
     id: "roadpro",
@@ -45,7 +45,7 @@ const products = [
     icon: RoadHorizon,
     span: "lg:col-span-1",
     tall: false,
-    img: "https://picsum.photos/seed/roadpro-treatment/600/500",
+    img: "/roadpro.jpg",
   },
   {
     id: "trackshield",
@@ -55,7 +55,7 @@ const products = [
     icon: Shield,
     span: "lg:col-span-1",
     tall: false,
-    img: "https://picsum.photos/seed/trackshield-mining/600/500",
+    img: "/trackshield.jpg",
   },
   {
     id: "site-regeneration",
@@ -65,7 +65,7 @@ const products = [
     icon: Plant,
     span: "lg:col-span-1",
     tall: false,
-    img: "https://picsum.photos/seed/site-regeneration-green/600/500",
+    img: "/site-regeneration.jpg",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function Home() {
                 className="group relative overflow-hidden block bg-dp-surface border border-dp-border rounded-none h-64 lg:h-80 hover:border-dp-amber/40 transition-colors duration-300"
               >
                 <Image
-                  src="https://picsum.photos/seed/dustloc-haul-road-large/900/600"
+                  src="/dustloc.jpg"
                   alt="DustLoc dust suppression on haul road"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-40 group-hover:opacity-50"
@@ -238,7 +238,7 @@ export default function Home() {
                 className="group relative overflow-hidden block bg-dp-surface border border-dp-border rounded-none h-64 lg:h-80 hover:border-dp-amber/40 transition-colors duration-300"
               >
                 <Image
-                  src="https://picsum.photos/seed/wetdown-surface-spray/600/600"
+                  src="/wetdown.jpg"
                   alt="WetDown application on unsealed surface"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-40 group-hover:opacity-50"
@@ -270,7 +270,7 @@ export default function Home() {
                 className="group relative overflow-hidden block bg-dp-surface border border-dp-border rounded-none h-56 hover:border-dp-amber/40 transition-colors duration-300"
               >
                 <Image
-                  src="https://picsum.photos/seed/roadpro-treatment-road/600/500"
+                  src="/roadpro.jpg"
                   alt="RoadPro road treatment"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-40 group-hover:opacity-50"
@@ -301,7 +301,7 @@ export default function Home() {
                 className="group relative overflow-hidden block bg-dp-surface border border-dp-border rounded-none h-56 hover:border-dp-amber/40 transition-colors duration-300"
               >
                 <Image
-                  src="https://picsum.photos/seed/trackshield-haul-truck/600/500"
+                  src="/trackshield.jpg"
                   alt="TrackShield on haul road"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-40 group-hover:opacity-50"
@@ -332,7 +332,7 @@ export default function Home() {
                 className="group relative overflow-hidden block bg-dp-elevated border border-dp-border rounded-none h-56 hover:border-dp-amber/40 transition-colors duration-300"
               >
                 <Image
-                  src="https://picsum.photos/seed/site-regen-green-land/600/500"
+                  src="/site-regeneration.jpg"
                   alt="Site regeneration and land rehabilitation"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-30 group-hover:opacity-40"
