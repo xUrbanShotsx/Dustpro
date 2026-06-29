@@ -70,12 +70,11 @@ export default function Nav() {
 
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <Link
-              href="/contact"
-              className="hidden md:inline-flex btn-primary text-[13px] py-2.5 px-5"
-            >
-              Get in Touch
-            </Link>
+            <div className="hidden md:block">
+              <Link href="/contact" className="btn-primary text-[13px] py-2.5 px-5">
+                Get in Touch
+              </Link>
+            </div>
             <button
               onClick={() => setOpen(!open)}
               className="md:hidden text-dp-text p-2"
