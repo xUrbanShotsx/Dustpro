@@ -437,7 +437,7 @@ export default function Home() {
           </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/Companylogos/burtoncivilcontractors.png", alt: "Burton Civil Contractors" },
+              { src: "/Companylogos/burtoncivilcontractors.png", alt: "Burton Civil Contractors", natural: true },
               { src: "/Companylogos/south32.png", alt: "South32" },
               { src: "/Companylogos/centennialcoal.png", alt: "Centennial Coal" },
               { src: "/Companylogos/cmacontracting.svg", alt: "CMA Contracting" },
@@ -447,7 +447,7 @@ export default function Home() {
               { src: "/Companylogos/greyhoundracingnsw.png", alt: "Greyhound Racing NSW" },
               { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining" },
               { src: "/Companylogos/peabodyenergy.png", alt: "Peabody Energy" },
-              { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal" },
+              { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal", natural: true },
               { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal" },
             ].map((logo) => (
               <AnimateIn key={logo.src} delay={0.05}>
@@ -456,7 +456,7 @@ export default function Home() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="object-contain max-h-[56px] w-auto max-w-[150px] brightness-0 invert opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                    className={`object-contain max-h-[56px] w-auto max-w-[150px] transition-opacity duration-300 ${"natural" in logo && logo.natural ? "opacity-70 group-hover:opacity-100" : "brightness-0 invert opacity-40 group-hover:opacity-100"}`}
                   />
                 </div>
               </AnimateIn>
