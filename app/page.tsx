@@ -447,7 +447,7 @@ export default function Home() {
               { src: "/Companylogos/greyhoundracingnsw.png", alt: "Greyhound Racing NSW" },
               { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining" },
               { src: "/Companylogos/peabodyenergy.png", alt: "Peabody Energy" },
-              { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal", natural: true },
+              { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal", screen: true },
               { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal" },
             ].map((logo) => (
               <AnimateIn key={logo.src} delay={0.05}>
@@ -456,7 +456,7 @@ export default function Home() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className={`object-contain max-h-[56px] w-auto max-w-[150px] transition-opacity duration-300 ${"natural" in logo && logo.natural ? "opacity-70 group-hover:opacity-100" : "brightness-0 invert opacity-40 group-hover:opacity-100"}`}
+                    className={`object-contain max-h-[56px] w-auto max-w-[150px] transition-opacity duration-300 ${"screen" in logo && logo.screen ? "grayscale brightness-[3] mix-blend-screen opacity-40 group-hover:opacity-100" : "natural" in logo && logo.natural ? "opacity-70 group-hover:opacity-100" : "brightness-0 invert opacity-40 group-hover:opacity-100"}`}
                   />
                 </div>
               </AnimateIn>
