@@ -435,29 +435,28 @@ export default function Home() {
               People we have helped
             </h2>
           </AnimateIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { src: "/Companylogos/burtoncivilcontractors.png", alt: "Burton Civil Contractors" },
               { src: "/Companylogos/south32.png", alt: "South32" },
               { src: "/Companylogos/centennialcoal.png", alt: "Centennial Coal" },
-              { src: "/Companylogos/cmacontracting.png", alt: "CMA Contracting" },
+              { src: "/Companylogos/cmacontracting.svg", alt: "CMA Contracting" },
               { src: "/Companylogos/deltagroup.png", alt: "Delta Group" },
               { src: "/Companylogos/deptofdefence.png", alt: "Department of Defence" },
-              { src: "/Companylogos/glencore.png", alt: "Glencore" },
+              { src: "/Companylogos/glencore.svg", alt: "Glencore" },
               { src: "/Companylogos/greyhoundracingnsw.png", alt: "Greyhound Racing NSW" },
-              { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining" },
+              { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining", dark: true },
               { src: "/Companylogos/peabodyenergy.png", alt: "Peabody Energy" },
               { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal" },
-              { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal" },
+              { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal", dark: true },
             ].map((logo) => (
               <AnimateIn key={logo.src} delay={0.05}>
-                <div className="flex items-center justify-center p-6 border border-dp-border bg-dp-elevated min-h-[100px]">
-                  <Image
+                <div className={`flex items-center justify-center p-6 border border-dp-border min-h-[100px] transition-opacity duration-300 opacity-90 hover:opacity-100 ${"dark" in logo && logo.dark ? "bg-dp-elevated" : "bg-white"}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={logo.src}
                     alt={logo.alt}
-                    width={160}
-                    height={60}
-                    className="object-contain max-h-[56px] w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                    className="object-contain max-h-[56px] w-auto max-w-[150px]"
                   />
                 </div>
               </AnimateIn>
