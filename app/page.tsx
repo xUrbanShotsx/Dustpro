@@ -426,8 +426,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INDUSTRIES - Tile grid */}
+      {/* CLIENTS - Logo grid */}
       <section className="section-pad bg-dp-surface border-t border-dp-border">
+        <div className="container-wide">
+          <AnimateIn>
+            <p className="label mb-4">Trusted By</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tightest mb-12">
+              People we have helped
+            </h2>
+          </AnimateIn>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { src: "/Companylogos/burtoncivilcontractors.png", alt: "Burton Civil Contractors" },
+              { src: "/Companylogos/south32.png", alt: "South32" },
+              { src: "/Companylogos/centennialcoal.png", alt: "Centennial Coal" },
+              { src: "/Companylogos/cmacontracting.png", alt: "CMA Contracting" },
+              { src: "/Companylogos/deltagroup.png", alt: "Delta Group" },
+              { src: "/Companylogos/deptofdefence.png", alt: "Department of Defence" },
+              { src: "/Companylogos/glencore.png", alt: "Glencore" },
+              { src: "/Companylogos/greyhoundracingnsw.png", alt: "Greyhound Racing NSW" },
+              { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining" },
+              { src: "/Companylogos/peabodyenergy.png", alt: "Peabody Energy" },
+              { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal" },
+              { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal" },
+            ].map((logo) => (
+              <AnimateIn key={logo.src} delay={0.05}>
+                <div className="flex items-center justify-center p-6 border border-dp-border bg-dp-elevated min-h-[100px]">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={160}
+                    height={60}
+                    className="object-contain max-h-[56px] w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INDUSTRIES - Tile grid */}
+      <section className="section-pad bg-dp-bg border-t border-dp-border">
         <div className="container-wide">
           <AnimateIn>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
