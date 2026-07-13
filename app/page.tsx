@@ -445,18 +445,18 @@ export default function Home() {
               { src: "/Companylogos/deptofdefence.png", alt: "Department of Defence" },
               { src: "/Companylogos/glencore.svg", alt: "Glencore" },
               { src: "/Companylogos/greyhoundracingnsw.png", alt: "Greyhound Racing NSW" },
-              { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining", dark: true },
+              { src: "/Companylogos/newcrest.png", alt: "Newcrest Mining" },
               { src: "/Companylogos/peabodyenergy.png", alt: "Peabody Energy" },
               { src: "/Companylogos/tahmoorcoal.png", alt: "Tahmoor Coal" },
-              { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal", dark: true },
+              { src: "/Companylogos/wollongongcoal.png", alt: "Wollongong Coal" },
             ].map((logo) => (
               <AnimateIn key={logo.src} delay={0.05}>
-                <div className={`flex items-center justify-center p-6 border border-dp-border min-h-[100px] transition-opacity duration-300 opacity-90 hover:opacity-100 ${"dark" in logo && logo.dark ? "bg-dp-elevated" : "bg-white"}`}>
+                <div className="group flex items-center justify-center p-6 border border-dp-border bg-dp-elevated min-h-[100px]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="object-contain max-h-[56px] w-auto max-w-[150px]"
+                    className="object-contain max-h-[56px] w-auto max-w-[150px] brightness-0 invert opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
               </AnimateIn>
